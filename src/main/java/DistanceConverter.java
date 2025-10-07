@@ -41,13 +41,18 @@ public class DistanceConverter {
                     System.out.println("Kilometers: " + distanceK);
                     System.out.println("Miles: " + (distanceK / 1.60934));
                     System.out.println();
-                    System.out.println();
-
 
                     break;
                 case 3:
                     System.out.print("Goodbye!");
+                    input.close();
+                    return;
+
+                default:
+                    System.out.println("Invalid choice. Please enter 1, 2, or 3.");
                     System.out.println();
+                    break;
+
 
 
             }
